@@ -6,7 +6,7 @@ let keysDefault = [];
 let audio = new Audio("/src/audios/a.wav");
 
 const playTune = (key) => {
-    audio.src = `/src/audios/${key}.wav`
+    audio.src = `./src/audios/${key}.wav`
     audio.play();
 
     const clickedKey = document.querySelector(`[data-key="${key}"]`);
